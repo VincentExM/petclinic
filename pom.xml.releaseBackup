@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
@@ -14,7 +15,7 @@
     </parent>
     <groupId>vnx.springcourse</groupId>
     <artifactId>petclinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>petclinic</name>
     <description>Demo project for Spring Boot</description>
 
@@ -34,7 +35,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>
-                        install
+                        <goal>install</goal>
                     </goals>
                 </configuration>
 
@@ -44,7 +45,6 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:VincentExM/petclinic.git</developerConnection>
-        <tag>petclinic-0.0.1</tag>
     </scm>
 
 </project>
