@@ -1,4 +1,4 @@
-package petclinic;
+package vnx.springcourse.petclinic;
 
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;

@@ -1,4 +1,4 @@
-package vnx.springcourse.petclinic;
+package petclinic;
 
 import org.junit.*;
 import org.junit.runner.*;
