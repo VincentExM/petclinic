@@ -31,9 +31,4 @@
         </plugins>
     </build>
 
-    <scm>
-        <developerConnection>scm:git:git@github.com:VincentExM/petclinic.git</developerConnection>
-        <tag>petclinic-0.0.1</tag>
-    </scm>
-
 </project>
