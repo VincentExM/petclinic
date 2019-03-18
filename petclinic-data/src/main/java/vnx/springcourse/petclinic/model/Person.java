@@ -1,14 +1,11 @@
 package vnx.springcourse.petclinic.model;
 
-import java.util.*;
-
 import lombok.*;
 
 @Getter
 @Setter
-public class Person {
+public class Person extends BaseEntity {
 
-	private UUID id;
 	private String firstName;
 	private String lastName;
 
