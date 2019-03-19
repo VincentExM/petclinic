@@ -4,12 +4,8 @@ import java.util.*;
 
 import vnx.springcourse.petclinic.model.*;
 
-public interface PetService {
+public interface PetService extends CrudService<Pet, UUID> {
 
-	Pet findById(UUID id);
 
-	Pet save(Owner owner);
-
-	Set<Pet> findAll();
 
 }
