@@ -5,22 +5,22 @@ import java.util.*;
 import vnx.springcourse.petclinic.model.*;
 import vnx.springcourse.petclinic.services.*;
 
-public class PersonMapService extends AbstractMapService<Person, UUID> implements CrudService<Person, UUID> {
+public class VetMapService extends AbstractMapService<Vet, UUID> implements CrudService<Vet, UUID> {
 
 	@Override
-	public Set<Person> findAll() {
+	public Set<Vet> findAll() {
 
 		return super.findAll();
 	}
 
 	@Override
-	public void delete(Person object) {
+	public void delete(Vet object) {
 
 		super.delete(object);
 	}
 
 	@Override
-	public Person save(Person object) {
+	public Vet save(Vet object) {
 
 		return super.save(object.getId(), object);
 	}
@@ -32,7 +32,7 @@ public class PersonMapService extends AbstractMapService<Person, UUID> implement
 	}
 
 	@Override
-	public Person findById(UUID id) {
+	public Vet findById(UUID id) {
 
 		return super.findById(id);
 	}

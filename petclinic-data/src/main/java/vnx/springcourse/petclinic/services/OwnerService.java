@@ -4,9 +4,9 @@ import java.util.*;
 
 import vnx.springcourse.petclinic.model.*;
 
-public interface PersonService extends CrudService<Person, UUID> {
+public interface OwnerService extends CrudService<Owner, UUID> {
 
-	Person findByLastName(String lastName);
+	Owner findByLastName(String lastName);
 
 
 }
