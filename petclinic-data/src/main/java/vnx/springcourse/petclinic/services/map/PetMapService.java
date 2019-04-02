@@ -2,10 +2,12 @@ package vnx.springcourse.petclinic.services.map;
 
 import java.util.*;
 
+import org.springframework.stereotype.*;
 import vnx.springcourse.petclinic.model.*;
 import vnx.springcourse.petclinic.services.*;
 
-public class PetMapService extends AbstractMapService<Pet, UUID> implements CrudService<Pet, UUID> {
+@Component
+public class PetMapService extends AbstractMapService<Pet, UUID> implements PetService {
 
 	@Override
 	public Set<Pet> findAll() {

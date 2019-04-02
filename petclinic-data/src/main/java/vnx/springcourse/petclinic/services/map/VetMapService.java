@@ -2,10 +2,12 @@ package vnx.springcourse.petclinic.services.map;
 
 import java.util.*;
 
+import org.springframework.stereotype.*;
 import vnx.springcourse.petclinic.model.*;
 import vnx.springcourse.petclinic.services.*;
 
-public class VetMapService extends AbstractMapService<Vet, UUID> implements CrudService<Vet, UUID> {
+@Component
+public class VetMapService extends AbstractMapService<Vet, UUID> implements VetService {
 
 	@Override
 	public Set<Vet> findAll() {
@@ -35,5 +37,11 @@ public class VetMapService extends AbstractMapService<Vet, UUID> implements Crud
 	public Vet findById(UUID id) {
 
 		return super.findById(id);
+	}
+
+	@Override
+	public Vet findByLastName(String lastName) {
+
+		return null;
 	}
 }
