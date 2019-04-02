@@ -6,7 +6,7 @@ import org.springframework.stereotype.*;
 import vnx.springcourse.petclinic.model.*;
 import vnx.springcourse.petclinic.services.*;
 
-@Component
+@Service
 public class OwnerMapService extends AbstractMapService<Owner, UUID> implements OwnerService {
 
 	@Override
